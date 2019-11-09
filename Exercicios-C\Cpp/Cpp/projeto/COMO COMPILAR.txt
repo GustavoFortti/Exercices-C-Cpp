@@ -1,0 +1,6 @@
+
+    TUTORIAL PARA COMPILAR ARQUIVO .CPP & .C
+
+gcc -c modulo.cpp -o modulo.o  
+gcc -c main.cpp -o main.o
+gcc modulo.o main.o -o meuprograma
