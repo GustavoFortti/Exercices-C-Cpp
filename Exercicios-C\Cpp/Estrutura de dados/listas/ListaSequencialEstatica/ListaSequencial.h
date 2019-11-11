@@ -1,0 +1,32 @@
+#ifndef _LISTASEQUENCIAL_
+#define _LISTASEQUENCIAL_
+
+#define MAX 100
+
+struct aluno
+{
+    int matricula;
+    char nome[30];
+    float n1, n2, n3;
+
+};
+
+struct aluno dados_aluno;
+
+typedef struct lista Lista;
+
+Lista* cria_lista();
+
+void libera_lista(Lista* li);
+
+int tamanho_lista(Lista* li);
+
+int lista_cheia(Lista* li);
+
+int lista_vazia(Lista* li);
+
+int insere_lista_final(Lista* li,struct aluno al);
+
+int insere_lista_inicio(Lista* li,struct aluno al);
+
+#endif
